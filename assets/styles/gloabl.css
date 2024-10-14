@@ -16,16 +16,6 @@ body {
     height: 100vh;
 }
 
-.bartab_wrapper {
-    width: 90%;
-    max-width: 900px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: auto;
-}
-
 h1 {
     text-align: center;
     color: #007bff;
@@ -34,6 +24,16 @@ h1 {
 h2 {
     margin-top: 20px;
     color: #333;
+}
+
+.bartab_wrapper {
+    width: 95%;
+    max-width: 700px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: auto;
 }
 
 .beverage-list {
@@ -55,6 +55,7 @@ h2 {
 .beverage-item:last-child {
     border-bottom: none;
 }
+
 .beers, .split-bill {
     display: flex;
     align-items: center;
@@ -75,6 +76,7 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
 .export-buttons button {
     margin-bottom: 10px;
     margin-right: 10px;
@@ -102,6 +104,7 @@ input[type="number"] {
     width: 100%;
     text-align: center;
 }
+
 .buttons {
     display: flex;
     flex-wrap: wrap;
@@ -111,16 +114,20 @@ input[type="number"] {
 .export-btn button {
     width: 100%;
 }
+
 .order-summary ul {
     padding-left: 0;
 }
+
 .order-summary li {
     list-style: none;
     padding: 5px 10px;
 }
+
 .order-summary p {
     font-weight: 700;
 }
+
 @media only screen and (max-width: 450px) {
     button {
         width: 100%;

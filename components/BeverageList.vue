@@ -10,9 +10,12 @@
         placeholder="Quantity"
       />
     </div>
-    <button @click="addToTab">Add to Tab</button>
+    <div class="buttons">
+        <button @click="addToTab">Add to Tab</button>
     <button @click="exportToCSV" v-if="order.length > 0">Export to CSV</button>
     <button @click="exportToPDF" v-if="order.length > 0">Export to PDF</button>
+</div>
+
     <div v-if="order.length > 0" class="order-summary">
       <h3>Order Summary</h3>
       <ul>

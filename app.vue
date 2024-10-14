@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bartab_wrapper">
     <h1>Open Bar Tab</h1>
     <BeverageList />
   </div>

@@ -16,13 +16,14 @@ body {
     height: 100vh;
 }
 
-.container {
+.bartab_wrapper {
     width: 90%;
-    max-width: 600px;
+    max-width: 900px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    margin: auto;
 }
 
 h1 {
@@ -37,6 +38,10 @@ h2 {
 
 .beverage-list {
     margin: 20px 0;
+}
+
+#__nuxt {
+    width: 100%;
 }
 
 .beverage-item {
@@ -87,7 +92,24 @@ input[type="number"] {
     width: 100%;
     text-align: center;
 }
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 .export-btn button {
     width: 100%;
+}
+.order-summary ul {
+    padding-left: 0;
+}
+.order-summary li {
+    list-style: none;
+    padding: 5px 10px;
+}
+@media only screen and (max-width: 450px) {
+    button {
+        width: 100%;
+    }
 }

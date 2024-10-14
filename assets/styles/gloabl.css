@@ -1,30 +1,93 @@
+/* global.css */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-  }
-  
-  h2 {
+    background-color: #f2f4f8;
     color: #333;
-  }
-  
-  button {
-    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.beverage-list {
+    margin: 20px 0;
+}
+
+.beverage-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.beverage-item:last-child {
+    border-bottom: none;
+}
+
+button {
     padding: 10px 15px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
     background-color: #0056b3;
-  }
-  
-  input[type="number"] {
+}
+
+input[type="number"] {
     width: 60px;
     margin-left: 10px;
-  }
-  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: #e7f3fe;
+    border-radius: 5px;
+}
+
+.export-btn {
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.export-btn button {
+    width: 100%;
+}
